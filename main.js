@@ -1,7 +1,7 @@
 //JS Doc
 
 //Grab JSON file from server
-let requestURL = '';
+let requestURL = 'https://superintendent-vergil.github.io/comp1073-Lab4-JSON';
 //New XHR object, grabs things from the server without refresh
 let request = new XMLHttpRequest();
 request.open('GET',requestURL);
@@ -9,14 +9,14 @@ request.responseType = 'json';
 request.send();
 
 request.onload = function(){
-    let plentyPizza = request.response;
-    console.log(plentyPizza);
-    pizzaTypes(plentyPizza);
+    let productS = request.response;
+    console.log(productS);
+    strangeProducts(productS);
 };
 
-function pizzaTypes(jsonObj) {
-    let pizzaTypes = jsonObj.pizzaTypes;
-    for(let i = 0; i<pizzaTypes.length; i++){
+function strangeProducts(jsonObj) {
+    let strangeProducts = jsonObj.strangeProducts;
+    for(let i = 0; i<strangeProducts.length; i++){
         //Build HTML Elements for the content
         let article = document.createElement('article');
         let h2 = document.createElement('h2');
@@ -26,15 +26,14 @@ function pizzaTypes(jsonObj) {
         let ul = document.createElement('ul');
 
         let section = document.querySelector('section');
-        img.setAttribute('src','https://superintendent-vergil.github.io/March12-JSON/assets/' + pizzaTypes[i].image);
-        img.setAttribute('alt', pizzaTypes[i].image);
-        h2.textContent = pizzaTypes[i].name;
-        p1.textContent = 'Price' + pizzaTypes[i].price;
-        p2.textContent = 'Size' + pizzaTypes[i].size;
-        let toppings = pizzaTypes[i].toppings;
-        for (let j=0; j<toppings.length; j++){
+        img.setAttribute('src','https://superintendent-vergil.github.io/comp1073-Lab4-JSON/img' + strangeProducts[i].image);
+        img.setAttribute('alt', strangeProducts[i].image);
+        h2.textContent = strangeProducts[i].name;
+        p1.textContent = 'Price' + strangeProducts[i].price;
+        let details = strangeProducts[i].details;
+        for (let j=0; j<details.length; j++){
             let listItem = document.createElement('li');
-            listItem.textContent = toppings[j];
+            listItem.textContent = details[j];
             ul.appendChild(listItem);
         }
         article.appendChild(img);
