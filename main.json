@@ -8,7 +8,7 @@
         "Size: 200x83x94mm",
         "No driver needed. Will work with any PC or Macintosh"
       ],
-      "image" : "img/deskFridge.jpg"
+      "image" : "deskFridge.jpg"
     },
     {
       "name" : "Edible Insects Bag of Mixed Edible Bugs",
@@ -19,7 +19,7 @@
         "Boiled and Dehydrated not Fried","Great Source of Protein",
         "Great Unique Gift"
       ],
-      "image" : "img/MixedBugs.jpg"
+      "image" : "MixedBugs.jpg"
     },
     {
       "name" : "Jelly Belly Sport Beans",
@@ -31,7 +31,7 @@
         "Energize with one pack 30 minutes before activity",
         "Made with natural flavors and colors from natural sources"
       ],
-      "image" : "img/JellyBeans.jpg"
+      "image" : "JellyBeans.jpg"
     },
     {
       "name" : "Portable Steam Sauna",
@@ -43,7 +43,7 @@
         "72\" Length Massage Table Required and is NOT included",
         "Related product videos are for the product demonstration only. The actual product may and will vary."
       ],
-      "image" : "img/PortableSauna.jpg"
+      "image" : "PortableSauna.jpg"
     },
     {
       "name" : "Incredibly Impractical Mr. Burns Shot Glass",
@@ -51,7 +51,7 @@
       "details" : [
         "N/A"
       ],
-      "image" : "img/Burns.jpg"
+      "image" : "Burns.jpg"
     }
   ]
 }

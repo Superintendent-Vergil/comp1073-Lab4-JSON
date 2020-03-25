@@ -1,7 +1,7 @@
 //JS Doc
 
 //Grab JSON file from server
-let requestURL = 'https://superintendent-vergil.github.io/comp1073-Lab4-JSON';
+let requestURL = 'https://superintendent-vergil.github.io/comp1073-Lab4-JSON/main.json';
 //New XHR object, grabs things from the server without refresh
 let request = new XMLHttpRequest();
 request.open('GET',requestURL);
