@@ -26,7 +26,7 @@ function strangeProducts(jsonObj) {
         let ul = document.createElement('ul');
 
         let section = document.querySelector('section');
-        img.setAttribute('src','https://superintendent-vergil.github.io/comp1073-Lab4-JSON/img' + strangeProducts[i].image);
+        img.setAttribute('src','https://superintendent-vergil.github.io/comp1073-Lab4-JSON/img/' + strangeProducts[i].image);
         img.setAttribute('alt', strangeProducts[i].image);
         h2.textContent = strangeProducts[i].name;
         p1.textContent = 'Price' + strangeProducts[i].price;
